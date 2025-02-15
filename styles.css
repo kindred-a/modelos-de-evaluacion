@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1200px; /* Ajusta el ancho máximo de la página */
+    padding: 0 20px; /* Agrega espacio a los lados */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363636;
+    padding: 20px;
+    border-bottom: 3px solid #333; /* Borde inferior para resaltar el header */
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+}
+/********/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3f7594;
+    border-radius: 5px;
+}
+
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    width: 200px;
+}
+
+nav ul .submenu li {
+    display: block;
+}
+
+nav ul .submenu li a {
+    padding: 10px;
+    display: block;
+    color: #324686;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.portada {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ajusta la altura según sea necesario */
+    line-height: 1.8; /* Ajusta el espaciado entre líneas */
+}
+
+.portada p {
+    margin-bottom: 10px; /* Espacio adicional entre párrafos */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
