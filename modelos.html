@@ -60,6 +60,17 @@
         color: #0056b3;
     }
 
+
+    /* Estilos específicos para la sección de recomendación */
+    .recommendation {
+        background: #fcfffb;
+        border: 1px solid #e6f4ea;
+    }
+
+    .recommendation .criteria li {
+        background: #f3fff4;
+        border-left-color: #28a745;
+    }
     @media (max-width: 768px) {
         h1 {
             font-size: 1.8rem;
@@ -175,6 +186,18 @@
                 <li><strong>Instrumento:</strong> Listado de atributos con parámetros medibles.</li>
             </ul>
         </div>
+
+        <!-- DIV: ¿Cuál utilizar? -->
+        <div class="model recommendation">
+            <h3>¿Cuál utilizar?</h3>
+            <ul class="criteria">
+                <li><strong>Para evaluar Objetos de Aprendizaje (OA):</strong> <strong>LORI</strong> (revisión experta y rúbrica) y <strong>COdA</strong> (enfoque pedagógico + tecnológico).</li>
+                <li><strong>Para políticas institucionales / interoperabilidad:</strong> <strong>Guía ANUIES-MetaRed</strong> (indicadores adaptables y enfoque en interoperabilidad y sostenibilidad).</li>
+                <li><strong>Para diseño y producción de RED:</strong> <strong>ECOBA</strong> (estética, adaptación y funcionalidad).</li>
+                <li><strong>Para una evaluación integral:</strong> <strong>Evaluación integral de RED</strong> (rúbricas y ponderación de dimensiones pedagógicas y técnicas).</li>
+                <li><strong>Para atributos técnicos y mantenimiento:</strong> <strong>Modelos clásicos (McCall, Boehm, FURPS)</strong> (confiabilidad, mantenibilidad, rendimiento, seguridad).</li>
+            </ul>
+        </div>
     </div>
 
     <footer>
@@ -182,5 +205,6 @@
     </footer>
 </body>
 </html>
+
 
 
