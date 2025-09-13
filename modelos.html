@@ -6,61 +6,73 @@
     <title>Modelos</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        h1, h2, h3 {
-            color: #333;
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.2rem;
+        color: #0056b3;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .model {
+        background: #ffffff;
+        margin: 20px 0;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .model:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .criteria {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .criteria li {
+        background: #f8faff;
+        margin: 8px 0;
+        padding: 12px 14px;
+        border-radius: 6px;
+        border-left: 5px solid #007BFF;
+        font-size: 0.95rem;
+        color: #444;
+    }
+
+    .criteria li strong {
+        color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.8rem;
         }
         .model {
-            background: #fff;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .criteria {
-            list-style: none;
-            padding: 0;
+            padding: 18px;
         }
         .criteria li {
-            background: #e2e2e2;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+            font-size: 0.9rem;
         }
-        .link {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 12px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .link:hover {
-            background: #0056b3;
-        }
-
-        .modelos {
-            background: #ffffff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .modelos h1 {
-            color: #007BFF;
-            font-size: 24px;
-        }
-        .modelos p {
-            color: #333;
-            font-size: 16px;
-        }
+    }
     </style>
+
 </head>
 <body>
     <header>
@@ -170,4 +182,5 @@
     </footer>
 </body>
 </html>
+
 
